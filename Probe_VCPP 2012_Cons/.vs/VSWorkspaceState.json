@@ -1,6 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ConsoleApplication1",
+    "\\ConsoleApplication1\\ConsoleApplication1",
+    "\\ConsoleApplication1\\ConsoleApplication1\\Debug",
+    "\\ConsoleApplication1\\ConsoleApplication1\\x64",
+    "\\ConsoleApplication1\\ConsoleApplication1\\x64\\Debug",
+    "\\ConsoleApplication1\\ConsoleApplication1\\x64\\Debug\\ConsoleA.f9e04141.tlog",
+    "\\ConsoleApplication1\\Debug",
+    "\\ConsoleApplication1\\x64",
+    "\\ConsoleApplication1\\x64\\Debug"
   ],
+  "SelectedNode": "\\ConsoleApplication1\\ConsoleApplication1\\price.cpp",
   "PreviewInSolutionExplorer": false
 }

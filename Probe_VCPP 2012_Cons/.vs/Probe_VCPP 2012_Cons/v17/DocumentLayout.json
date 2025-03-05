@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\price.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleApplication1\\ConsoleApplication1\\price.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\price.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleApplication1\\ConsoleApplication1\\price.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "price.h",
+              "DocumentMoniker": "C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\price.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1\\price.h",
+              "ToolTip": "C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\price.h",
+              "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1\\price.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-05T09:29:37.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "price.cpp",
+              "DocumentMoniker": "C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\price.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1\\price.cpp",
+              "ToolTip": "C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\price.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1\\price.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-05T09:29:20.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsoleApplication1.cpp",
+              "DocumentMoniker": "C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "ToolTip": "C:\\Users\\Home-PC\\Documents\\\u043B\u043D\u0443\\\u041E\u041E\u041F\\\u041B\u0430\u0431\u043E\u0440\u0430\u0442\u043E\u0440\u043D\u0430 \u21161\\Probe_VCPP 2012_Cons\\ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-02T15:26:22.703Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
