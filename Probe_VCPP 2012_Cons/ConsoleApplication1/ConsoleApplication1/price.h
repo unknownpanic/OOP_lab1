@@ -1,5 +1,3 @@
-#ifndef PRICE_H
-#define PRICE_H
 #include <iostream>
 #include <cmath>
 
@@ -16,4 +14,4 @@ Price operator+(const Price& a, const Price& b);
 Price operator*(const Price& price, double multiplier);
 Price roundToNationalBank(const Price& price);
 
-#endif
+
