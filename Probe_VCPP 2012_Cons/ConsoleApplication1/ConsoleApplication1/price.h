@@ -4,14 +4,10 @@
 struct Price {
     int hryvnia;
     int kopiykas;
-
-    Price();
-    Price(int h, int k);
-    void normalize();
 };
 
-Price operator+(const Price& a, const Price& b);
-Price operator*(const Price& price, double multiplier);
+Price createPrice(int h, int k);
+Price addPrices(const Price& a, const Price& b);
+Price multiplyPrice(const Price& price, double multiplier);
 Price roundToNationalBank(const Price& price);
-
-
+void normalize(Price& price);
