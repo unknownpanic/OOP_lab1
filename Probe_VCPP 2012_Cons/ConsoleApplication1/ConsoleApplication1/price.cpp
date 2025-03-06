@@ -1,40 +1,32 @@
 #include "price.h"
 #include <cmath>
 
-Price createPrice(int h, int k) {
-    Price price = {h, k};
-    normalize(price);
-    return price;
-}
-
-void normalize(Price& price) {
-    if (price.kopiykas >= 100) {
-        price.hryvnia += price.kopiykas / 100;
-        price.kopiykas %= 100;
+void normalize(int& hryvnia, int& kopiykas) {
+    if (kopiykas >= 100) {
+        hryvnia += kopiykas / 100;
+        kopiykas %= 100;
     }
 }
 
-Price addPrices(const Price& a, const Price& b) {
-    Price result = {a.hryvnia + b.hryvnia, a.kopiykas + b.kopiykas};
-    normalize(result);
-    return result;
+void addPrices(int h1, int k1, int h2, int k2, int& resultH, int& resultK) {
+    resultH = h1 + h2;
+    resultK = k1 + k2;
+    normalize(resultH, resultK);
 }
 
-Price multiplyPrice(const Price& price, double multiplier) {
-    double totalKop = (price.hryvnia * 100 + price.kopiykas) * multiplier;
+void multiplyPrice(int h, int k, double multiplier, int& resultH, int& resultK) {
+    double totalKop = (h * 100 + k) * multiplier;
     int roundedTotal = static_cast<int>(round(totalKop));
-    return createPrice(roundedTotal / 100, roundedTotal % 100);
+    resultH = roundedTotal / 100;
+    resultK = roundedTotal % 100;
 }
 
-Price roundToNationalBank(const Price& price) {
-    Price newPrice = price;
-    int remainder = newPrice.kopiykas % 10;
-
+void roundToNationalBank(int& hryvnia, int& kopiykas) {
+    int remainder = kopiykas % 10;
     if (remainder < 5)
-        newPrice.kopiykas -= remainder;
+        kopiykas -= remainder;
     else
-        newPrice.kopiykas += (10 - remainder);
+        kopiykas += (10 - remainder);
 
-    normalize(newPrice);
-    return newPrice;
+    normalize(hryvnia, kopiykas);
 }

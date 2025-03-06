@@ -6,8 +6,7 @@ struct Price {
     int kopiykas;
 };
 
-Price createPrice(int h, int k);
-Price addPrices(const Price& a, const Price& b);
-Price multiplyPrice(const Price& price, double multiplier);
-Price roundToNationalBank(const Price& price);
-void normalize(Price& price);
+void normalize(int& hryvnia, int& kopiykas);
+void addPrices(int h1, int k1, int h2, int k2, int& resultH, int& resultK);
+void multiplyPrice(int h, int k, double multiplier, int& resultH, int& resultK);
+void roundToNationalBank(int& hryvnia, int& kopiykas);
