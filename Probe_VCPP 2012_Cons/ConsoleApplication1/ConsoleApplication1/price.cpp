@@ -14,11 +14,10 @@ void addPrices(Price& p1, const Price& p2) {
     normalize(p1.hryvnia, p1.kopiykas);
 }
 
-void multiplyPrice(Price& p, double multiplier) {
-    double totalKop = (p.hryvnia * 100 + p.kopiykas) * multiplier;
-    int roundedTotal = static_cast<int>(round(totalKop));
-    p.hryvnia = roundedTotal / 100;
-    p.kopiykas = roundedTotal % 100;
+void multiplyPrice(Price& p, int multiplier) {
+    int totalKop = (p.hryvnia * 100 + p.kopiykas) * multiplier;
+    p.hryvnia = totalKop / 100;
+    p.kopiykas = totalKop % 100;
     normalize(p.hryvnia, p.kopiykas);
 }
 

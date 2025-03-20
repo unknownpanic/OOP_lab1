@@ -8,5 +8,5 @@ struct Price {
 
 void normalize(int& hryvnia, short& kopiykas);
 void addPrices(Price& p1, const Price& p2);
-void multiplyPrice(Price& p, double multiplier);
+void multiplyPrice(Price& p, int multiplier);
 void roundToNationalBank(int& hryvnia, short& kopiykas);
