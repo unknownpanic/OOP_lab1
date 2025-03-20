@@ -1,7 +1,10 @@
 # ninja log v6
-36	937	7629545548296354	CMakeFiles/_1.dir/Probe_VCPP_2012_Cons/ConsoleApplication1/ConsoleApplication1/price.cpp.obj	27183342f84b359c
-13	2867	7635016226370428	CMakeFiles/_1.dir/Probe_VCPP_2012_Cons/ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.cpp.obj	159bdeb9363ea244
-2868	3119	7635016254919741	_1.exe	a42eaf66fa679183
+41	949	7635608211862766	CMakeFiles/_1.dir/Probe_VCPP_2012_Cons/ConsoleApplication1/ConsoleApplication1/price.cpp.obj	27183342f84b359c
+16	3255	7635608211619287	CMakeFiles/_1.dir/Probe_VCPP_2012_Cons/ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.cpp.obj	159bdeb9363ea244
+3255	3546	7635608244011112	_1.exe	a42eaf66fa679183
 15	3295	7628700349911420	CMakeFiles/_1.dir/Probe_VCPP_2012_Cons/ConsoleApplication1/ConsoleApplication1/main.cpp.obj	f60594a080d527cc
-5	438	7635016653089537	build.ninja	b2f88b9a42714a33
-5	415	7635016653089537	build.ninja	b2f88b9a42714a33
+6	507	7635639164129917	build.ninja	b2f88b9a42714a33
+5	509	7635639164129917	build.ninja	b2f88b9a42714a33
+27	896	7635639165079531	CMakeFiles/_1.dir/Probe_VCPP_2012_Cons/ConsoleApplication1/ConsoleApplication1/price.cpp.obj	27183342f84b359c
+11	3288	7635639164920030	CMakeFiles/_1.dir/Probe_VCPP_2012_Cons/ConsoleApplication1/ConsoleApplication1/ConsoleApplication1.cpp.obj	159bdeb9363ea244
+3289	3595	7635639197691434	_1.exe	a42eaf66fa679183

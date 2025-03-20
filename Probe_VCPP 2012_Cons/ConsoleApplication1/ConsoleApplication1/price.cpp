@@ -1,32 +1,33 @@
 #include "price.h"
 #include <cmath>
 
-void normalize(int& hryvnia, int& kopiykas) {
+void normalize(int& hryvnia, short& kopiykas) {
     if (kopiykas >= 100) {
         hryvnia += kopiykas / 100;
-        kopiykas %= 100;
+        kopiykas %= 100; // Перетворення копійок у гривні, якщо копійок більше 100
     }
 }
 
-void addPrices(int h1, int k1, int h2, int k2, int& resultH, int& resultK) {
-    resultH = h1 + h2;
-    resultK = k1 + k2;
-    normalize(resultH, resultK);
+void addPrices(Price& p1, const Price& p2) {
+    p1.hryvnia += p2.hryvnia;
+    p1.kopiykas += p2.kopiykas;
+    normalize(p1.hryvnia, p1.kopiykas);
 }
 
-void multiplyPrice(int h, int k, double multiplier, int& resultH, int& resultK) {
-    double totalKop = (h * 100 + k) * multiplier;
+void multiplyPrice(Price& p, double multiplier) {
+    double totalKop = (p.hryvnia * 100 + p.kopiykas) * multiplier;
     int roundedTotal = static_cast<int>(round(totalKop));
-    resultH = roundedTotal / 100;
-    resultK = roundedTotal % 100;
+    p.hryvnia = roundedTotal / 100;
+    p.kopiykas = roundedTotal % 100;
+    normalize(p.hryvnia, p.kopiykas);
 }
 
-void roundToNationalBank(int& hryvnia, int& kopiykas) {
+void roundToNationalBank(int& hryvnia, short& kopiykas) {
     int remainder = kopiykas % 10;
     if (remainder < 5)
         kopiykas -= remainder;
     else
         kopiykas += (10 - remainder);
 
-    normalize(hryvnia, kopiykas);
+    normalize(hryvnia, kopiykas); // Заокруглення копійок за правилами Нацбанку
 }

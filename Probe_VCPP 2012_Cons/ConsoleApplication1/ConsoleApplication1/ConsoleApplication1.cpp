@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     SetConsoleOutputCP(CP_UTF8);
 
-    int totalHryvnia = 0, totalKopiykas = 0;
+    Price totalPrice = {0, 0}; // Ініціалізація загальної ціни
     string inputMethod;
     cout << "Enter 'file' to read from data.txt or 'console' to enter data manually: ";
     cin >> inputMethod;
@@ -26,26 +26,28 @@ int main() {
     }
 
     if (!useFile) {
-        cout << "Enter data in the format: hryvnia kopiykas quantity (for example: 19 89 3)." << endl;
+        cout << "Enter data in the format: hryvnia kopiykas quantity (e.g.: 19 89 3)." << endl;
         cout << "To finish, use an incorrect format." << endl;
     }
 
-    int h, k, quantity;
+    int h, quantity;
+    short k;
+
     while ((useFile ? inputFile : cin) >> h >> k >> quantity) {
-        int itemHryvnia, itemKopiykas;
-        multiplyPrice(h, k, quantity, itemHryvnia, itemKopiykas);
-        addPrices(totalHryvnia, totalKopiykas, itemHryvnia, itemKopiykas, totalHryvnia, totalKopiykas);
+        Price itemPrice = {h, k};
+        multiplyPrice(itemPrice, quantity);
+        addPrices(totalPrice, itemPrice);
     }
 
     if (useFile) {
         inputFile.close();
     }
 
-    int roundedHryvnia = totalHryvnia, roundedKopiykas = totalKopiykas;
-    roundToNationalBank(roundedHryvnia, roundedKopiykas);
+    Price roundedPrice = totalPrice;
+    roundToNationalBank(roundedPrice.hryvnia, roundedPrice.kopiykas);
 
-    cout << "\nTotal bill amount: " << totalHryvnia << " hryvnia " << totalKopiykas << " kopiykas" << endl;
-    cout << "Amount due (rounded): " << roundedHryvnia << " hryvnia " << roundedKopiykas << " kopiykas" << endl;
+    cout << "\nTotal bill amount: " << totalPrice.hryvnia << " hryvnia " << totalPrice.kopiykas << " kopiykas" << endl;
+    cout << "Amount due (rounded): " << roundedPrice.hryvnia << " hryvnia " << roundedPrice.kopiykas << " kopiykas" << endl;
 
     return 0;
 }
